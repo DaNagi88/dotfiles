@@ -20,6 +20,7 @@ if type brew &>/dev/null; then
   autoload -Uz compinit
   compinit -u
 fi
+setopt globdots
 setopt correct
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*:default' menu select=2
