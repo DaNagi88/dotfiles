@@ -1,0 +1,41 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_event = 'InsertCharPre'
+
+[[plugins]]
+repo = 'zchee/deoplete-jedi'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'w0rp/ale'
+
+[[plugins]]
+repo = 'ervandew/supertab'
+
+[[plugins]]
+repo = 'nvie/vim-flake8'
+
+[[plugins]]
+repo = 'tbodt/deoplete-tabnine'
+on_event = ['InsertEnter']
+build = './install.sh'
+
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+
+[[plugins]]                                                                        
+repo = 'heavenshell/vim-pydocstring'                                               
+on_ft = ['python']                                                                 
+hook_add = '''                                                                     
+    let g:pydocstring_doq_path = '/Users/ryousuke/anaconda3/bin/doq'
+    let g:pydocstring_formatter = 'google'                                         
+    nmap <silent> <C-l> <Plug>(pydocstring)
+    '''
