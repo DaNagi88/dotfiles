@@ -52,6 +52,7 @@ alias l='ls -G'
 alias ls='ls -G'
 alias ll='ls -l'
 alias la='ls -a'
+alias lw='ls|wc -l'
 alias lla='ls -al'
 alias mkdir='mkdir -p'
 alias ide="~/.scripts/tmux_ide.sh"
