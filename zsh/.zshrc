@@ -55,6 +55,7 @@ alias la='ls -a'
 alias lla='ls -al'
 alias mkdir='mkdir -p'
 alias ide="~/.scripts/tmux_ide.sh"
+alias rsync='rsync --exclude .DS_Store'
 set -o noclobber
 function peco-select-history() {
     local tac
