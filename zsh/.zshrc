@@ -35,7 +35,7 @@ GIT_PS1_SHOWUPSTREAM=1
 GIT_PS1_SHOWUNTRACKEDFILES=
 GIT_PS1_SHOWSTASHSTATE=1
 PROMPT='%B%F{blue}%n@%m:%b%F{cyan}%~%F{white}$ '
-RPROMPT='%F{cyan}$(__git_ps1 "[%s]")'
+RPROMPT='%F{cyan}$(__git_ps1 "[%s]")%F{white}'
 export LSCOLORS=ExGxcxdxCxegedabagacec
 export LS_COLORS='di=01;34:ln=01;36:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
