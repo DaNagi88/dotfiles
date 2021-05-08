@@ -35,4 +35,10 @@ Temporary Items
 .apdisk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,dotfilessh
-nvim/plugins/
+
+
+# stash files
+**/*.stash
+**/*.stash/
+
+nvim/.netrwhist
