@@ -1,0 +1,18 @@
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'zchee/deoplete-zsh'
+on_ft = ['zsh', 'sh']
+
+[[plugins]]
+repo = 'zchee/deoplete-jedi'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+depends = ['context_filetype.vim']
+on_event = 'InsertEnter'
+hook_source = '''
+    source ~/.config/nvim/plugins/deoplete.vim
+    call deoplete#enable()
+'''

@@ -1,0 +1,11 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = '''
+    source ~/.config/nvim/plugins/ale.vim
+'''
+
+[[plugins]]
+repo = 'cespare/vim-toml'
