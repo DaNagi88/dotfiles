@@ -6,6 +6,8 @@ set number
 set cursorline
 set cursorcolumn
 set display=lastline
+
+"highlight spaces at EOL
 set list listchars=trail:\ 
 hi SpecialKey ctermbg=red
 
@@ -52,10 +54,13 @@ set shiftwidth=4
 set nobackup
 set autoread
 set hidden
+
 "undo history
 if has('persistent_undo')
     let undo_path = expand('~/.vim/undo')
     exe 'set undodir=' .. undo_path
     set undofile
 endif
+
+"help options
 set helplang=ja
