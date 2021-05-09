@@ -9,7 +9,7 @@ set display=lastline
 
 "highlight spaces at EOL
 set list listchars=trail:\ 
-hi SpecialKey ctermbg=red
+highlight SpecialKey ctermbg=red
 
 "status lines
 set laststatus=2
