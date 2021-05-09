@@ -6,6 +6,7 @@ set number
 set cursorline
 set cursorcolumn
 set display=lastline
+set noshowmode
 
 "highlight spaces at EOL
 set list listchars=trail:\ 
@@ -13,7 +14,7 @@ highlight SpecialKey ctermbg=red
 
 "status lines
 set laststatus=2
-set statusline=%f%m%r%w%=[ENC=%{&fileencoding}][%l/%L],\ %P
+" set statusline=%f%m%r%w%=[ENC=%{&fileencoding}][%l/%L],\ %P
 
 "syntax
 syntax enable

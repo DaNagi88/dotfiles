@@ -15,3 +15,9 @@ repo = 'vim-jp/vimdoc-ja'
 
 [[plugins]]
 repo = 'jacoborus/tender.vim'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+    let g:lightline = { 'colorscheme': 'tender' }
+'''
