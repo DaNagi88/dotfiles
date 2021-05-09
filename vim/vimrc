@@ -14,7 +14,7 @@ augroup END
 augroup filetypedetect
 augroup END
 
-let g:python3_host_prog = '/Users/yoshimuratakayuki/anaconda3/bin/python'
+let g:python3_host_prog = $HOME.'/anaconda3/bin/python'
 
 call s:source_rc('dein.vim')
 call s:source_rc('map.vim')
