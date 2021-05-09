@@ -64,3 +64,4 @@ endif
 
 "help options
 set helplang=ja
+autocmd Filetype help wincmd H
