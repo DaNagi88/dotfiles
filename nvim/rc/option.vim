@@ -22,6 +22,12 @@ syntax enable
 set visualbell
 set noerrorbells
 
+"color scheme
+if has("termguicolors")
+    set termguicolors
+endif
+colorscheme tender
+
 
 "--------------------------------------------------
 " MANIPULATION
