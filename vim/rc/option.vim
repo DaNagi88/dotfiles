@@ -64,8 +64,7 @@ set hidden
 
 "undo history
 if has('persistent_undo')
-    let undo_path = expand('~/.vim/undo')
-    exe 'set undodir=' .. undo_path
+    set undodir=~/.vim/undo
     set undofile
 endif
 
