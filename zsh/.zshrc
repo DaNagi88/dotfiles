@@ -14,6 +14,18 @@ setopt hist_reduce_blanks
 setopt extended_glob
 
 
+# View
+setopt PROMPT_SUBST
+source $HOME/dotfiles/git/.git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUPSTREAM=1
+GIT_PS1_SHOWUNTRACKEDFILES=
+GIT_PS1_SHOWSTASHSTATE=1
+PROMPT='%B%F{blue}%n@%m:%b%F{cyan}%~%F{white}$ '
+RPROMPT='%F{cyan}$(__git_ps1 "[%s]")%F{white}'
+export LSCOLORS=ExGxcxdxCxegedabagacec
+export LS_COLORS='di=01;34:ln=01;36:so=32:pi=33:ex=01;32:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+
 # completion
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -26,18 +38,6 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*:default' menu select=2
 zstyle ':completion:*' ignore-parents parent pwd ..
 zmodload zsh/complist
-
-# View
-setopt PROMPT_SUBST
-source $HOME/.git-prompt.sh
-GIT_PS1_SHOWDIRTYSTATE=1
-GIT_PS1_SHOWUPSTREAM=1
-GIT_PS1_SHOWUNTRACKEDFILES=
-GIT_PS1_SHOWSTASHSTATE=1
-PROMPT='%B%F{blue}%n@%m:%b%F{cyan}%~%F{white}$ '
-RPROMPT='%F{cyan}$(__git_ps1 "[%s]")%F{white}'
-export LSCOLORS=ExGxcxdxCxegedabagacec
-export LS_COLORS='di=01;34:ln=01;36:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
 # Operation
 bindkey -M menuselect 'h' vi-backward-char

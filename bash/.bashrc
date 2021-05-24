@@ -1,5 +1,5 @@
-source $HOME/.git-completion.bash
-source $HOME/.git-prompt.sh
+source $HOME/dotfiles/git/.git-completion.bash
+source $HOME/dotfiles/git/.git-prompt.sh
 
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUPSTREAM=1
