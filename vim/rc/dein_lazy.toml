@@ -6,7 +6,13 @@ repo = 'zchee/deoplete-zsh'
 on_ft = ['zsh', 'sh']
 
 [[plugins]]
+repo = 'Shougo/deoplete-clangx'
+
+[[plugins]]
 repo = 'zchee/deoplete-jedi'
+
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
